@@ -1,5 +1,16 @@
-*{
+* {
     font-family: 'Roboto', sans-serif;
+}
+
+span {
+    color: #AAAAAA;
+    margin-left: 8px;
+}
+
+h1 {
+    font-weight: bold;
+    margin-right: 6px;
+    margin-left: 6px;
 }
 
 header {
@@ -41,6 +52,35 @@ footer {
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
 }
 
+input {
+    position: fixed;
+    width: 145px;
+    height: 30px;
+    left: 17px;
+    top: 612px;
+    z-index: 6;
+    
+}
+
+input[type=text]{
+    outline:none
+}
+
+::-webkit-input-placeholder {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+}
+
+
+
 footer ion-icon {
     position: fixed;
     top: 614px;
@@ -52,31 +92,60 @@ footer ion-icon {
 
 .caixa-principal {
     background-color: #e5e5e5;
-    height: 587px;
+    height: 507px;
     width: 375px;
     padding-top: 106px;
+    overflow: hidden;
+
 }
 
 .mensagem-status {
     width: 375px;
-    height: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background: #DCDCDC;
     border-radius: 2px;
     margin-bottom: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    word-break: break-all;
 }
 
 .mensagem-reservada {
     width: 375px;
-    height: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background: #ffdede;
     border-radius: 2px;
     margin-bottom: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    word-break: break-all;
 }
 
 .mensagem-normal {
     width: 375px;
-    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 15px;
     background: #FFFFFF;
     border-radius: 2px;
     margin-bottom: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    word-break: break-all;
 }
