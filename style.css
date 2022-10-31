@@ -2,15 +2,19 @@
     font-family: 'Roboto', sans-serif;
 }
 
-span {
+.time {
     color: #AAAAAA;
     margin-left: 8px;
 }
 
-h1 {
+span {
     font-weight: bold;
     margin-right: 6px;
     margin-left: 6px;
+}
+
+p{
+    word-break: break-all;
 }
 
 header {
@@ -62,9 +66,8 @@ input {
     
 }
 
-input[type=text]{
-    outline:none
-}
+
+
 
 ::-webkit-input-placeholder {
     font-family: 'Roboto';
@@ -92,11 +95,11 @@ footer ion-icon {
 
 .caixa-principal {
     background-color: #e5e5e5;
-    height: 507px;
+    height: 495px;
     width: 375px;
     padding-top: 106px;
     overflow: hidden;
-
+    
 }
 
 .mensagem-status {
@@ -113,7 +116,7 @@ footer ion-icon {
     line-height: 16px;
     display: flex;
     align-items: center;
-    word-break: break-all;
+   
 }
 
 .mensagem-reservada {
@@ -130,7 +133,7 @@ footer ion-icon {
     line-height: 16px;
     display: flex;
     align-items: center;
-    word-break: break-all;
+  
 }
 
 .mensagem-normal {
@@ -147,5 +150,5 @@ footer ion-icon {
     line-height: 16px;
     display: flex;
     align-items: center;
-    word-break: break-all;
+   
 }
