@@ -18,20 +18,20 @@ function start() {
 
         for (let i = 0; i < promessa.data.length; i++) {
             if (promessa.data[i].type == "message") {
-                principal.innerHTML += `<div class="mensagem-normal mensagem">
+                principal.innerHTML += `<div class="mensagem-normal mensagem" data-test="message">
               
                 <div class = "time">  (${promessa.data[i].time})  </div> <p> <span>${promessa.data[i].from}</span> para <span>${promessa.data[i].to}</span>${promessa.data[i].text}<p>
                  </div>`
                 
             }
             if (promessa.data[i].type == "status") {
-                principal.innerHTML += `<div class="mensagem-status mensagem">
+                principal.innerHTML += `<div class="mensagem-status mensagem" data-test="message">
                 <div class = "time">  (${promessa.data[i].time})  </div> <p> <span>${promessa.data[i].from}</span> ${promessa.data[i].text}</p>
                 </div>`
                 
             }
             if (promessa.data[i].type == "private_message") {
-                principal.innerHTML += `<div class="mensagem-reservada mensagem">
+                principal.innerHTML += `<div class="mensagem-reservada mensagem" data-test="message">
                 <div class = "time">  (${promessa.data[i].time})  </div> <p> <span>${promessa.data[i].from}</span> reservadamente para <span>${promessa.data[i].to}</span>${promessa.data[i].text}<p>
                 </div>`
                 
